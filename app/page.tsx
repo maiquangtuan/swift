@@ -171,18 +171,9 @@ export default function Home() {
 				{messages.length === 0 && (
 					<>
 						<p>
-							A fast, open-source voice assistant powered by{" "}
-							<A href="https://groq.com">Groq</A>,{" "}
-							<A href="https://cartesia.ai">Cartesia</A>,{" "}
-							<A href="https://www.vad.ricky0123.com/">VAD</A>,
-							and <A href="https://vercel.com">Vercel</A>.{" "}
-							<A
-								href="https://github.com/ai-ng/swift"
-								target="_blank"
-							>
-								Learn more
-							</A>
-							.
+							A Realistic Interview Simulations powered by{" "}
+							<A href="https://mindpal.space/">MindPal</A>,{" "}
+							
 						</p>
 
 						{vad.loading ? (
@@ -190,7 +181,7 @@ export default function Home() {
 						) : vad.errored ? (
 							<p>Failed to load speech detection.</p>
 						) : (
-							<p>Start talking to chat.</p>
+							<p>Start talking.</p>
 						)}
 					</>
 				)}
